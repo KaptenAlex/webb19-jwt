@@ -1,6 +1,6 @@
 {
   "name": "jwt",
-  "homepage": "https://kaptenalex.github.io/webb19-jwt",
+  "homepage": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "serve": "npm run build && cd build && npx serve",
+    "serve_python": "npm run build && cd build && python -m http.server 8000"
   },
   "eslintConfig": {
     "extends": [
